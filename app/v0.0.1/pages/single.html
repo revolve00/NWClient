@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../assest/js/jquery.min.js"></script>
+<script src="../assest/js/jquery.easyui.min.js"></script>
+<script>
+    function readProperties(config){
+        alert(config["a"]);
+    }
+    function readMsg(msg){
+        alert(msg + "single");
+    }
+    function tcpMessage(data, client){
+        alert(data + "single");
+    }
+
+    $(function () {
+        var mainFun = require("../assest/lib/tmp/mainProcess.js");
+        mainFun.MainProcess.udpReadMessasg(readMsg);
+    });
+</script>
+</body>
+</html>

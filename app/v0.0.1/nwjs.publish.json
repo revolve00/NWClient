@@ -1,0 +1,9 @@
+{
+  "version": "any",
+  "package": {},
+  "html": [
+    "pages/index.html"
+  ],
+  "files": [],
+  "exclude": []
+}
